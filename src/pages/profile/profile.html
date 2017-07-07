@@ -9,4 +9,22 @@
 
 <ion-content padding>
 
+  <ion-item>
+    <ion-label floating>Nazwa uzytkownika</ion-label>
+    <ion-input type="text" [(ngModel)]="profile.username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Imie</ion-label>
+    <ion-input type="text" [(ngModel)]="profile.firstname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Nazwisko</ion-label>
+    <ion-input type="text" [(ngModel)]="profile.lastname"></ion-input>
+  </ion-item>
+
+  <button ion-button clear block  (click)="createProfile(profile)">Profile</button> 
+
+
 </ion-content>

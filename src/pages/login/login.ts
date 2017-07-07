@@ -27,7 +27,7 @@ export class LoginPage {
       const result = await this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
       console.log(result);
       if(result){
-        this.navCtrl.push('ProfilePage');
+        this.navCtrl.push('HomePage');
       }
     }
     catch(e){

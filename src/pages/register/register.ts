@@ -27,6 +27,7 @@ export class RegisterPage {
     try{
       const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password);
       console.log(result);
+      this.navCtrl.setRoot('ProfilePage');
     }
     catch(e){
       console.error(e);
